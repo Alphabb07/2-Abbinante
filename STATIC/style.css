@@ -11,6 +11,7 @@ font-family: 'Courier New', Courier, monospace;
 
 }
 .Button{
+position: relative;
 margin-top: 50px;
 margin-left: 120px;
 margin-right: 1050px;
@@ -25,13 +26,27 @@ height: 78;
 display:  block;
 
 }
-.zerouno{
-    position: absolute;
-    top 0;
-    left: 0;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-family: Merryweather;
+
+.Button a{
+    font-size: 33px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    
+}
+.Button a::after{
+content: "";
+height: 34px;
+width: 28px;
+background-image: url(IMMAGES/arrow.svg);
+display: block;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+
+
+
+
 }
 header{
 
@@ -43,5 +58,27 @@ padding-bottom: 30px;
 .Button:hover{
 
 background-color: rgb(147, 145, 145);
+
+}
+
+ul{
+    counter-reset: listItem;
+    list-style: none;
+  }
+  
+  li:before {
+    content: ".0" counter(listItem);
+    counter-increment: listItem;
+  }
+  
+  footer{
+
+
+  }
+.link{
+ color: red;
+
+
+
 
 }
