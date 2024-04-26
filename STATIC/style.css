@@ -21,9 +21,10 @@ padding: 10px 30px;
 font-size: 33px;
 text-decoration: color( 255 255 255);
 color: white;
-width: 308;
-height: 78;
+width: 308px;
+height: 78px;
 display:  block;
+
 
 }
 
@@ -43,6 +44,7 @@ display: block;
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
+
 
 
 
@@ -69,6 +71,8 @@ ul{
   li:before {
     content: ".0" counter(listItem);
     counter-increment: listItem;
+    font-family: Marryweather;
+    font-size: 70px;
   }
   
   footer{
@@ -79,6 +83,31 @@ ul{
  color: red;
 
 
+
+
+}
+
+.righe{
+width: 1200px;
+
+
+}
+
+.testo{
+  max-width: 1299px;
+  font-family: marryweather;
+  font-size: 22px;
+}
+
+.footer{
+height: 314px;
+width: 1600px;
+}
+.footertext{
+  margin-right: 1050px;
+font-size: 22;
+font-family: Marryweather;
+margin-left: 20px;
 
 
 }
